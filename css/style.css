@@ -1,0 +1,267 @@
+/*variables*/
+:root {
+  --prety-color: rgb(255, 108, 0);
+  --black-color: #303030;
+  --while-color: #ffffff;
+  --main-font: "Open-Sans", sans-serif;
+  --accent-font: "Raleway", sans-serif;
+  --grey-op: rgba(157, 164, 189, 0.6);
+  --grey: rgba(85, 85, 85, 1);
+  --dark-grey: #555555;
+}
+
+.container {
+  width: 1200px;
+  margin-right: auto;
+  margin-left: auto;
+  padding: 0 15px;
+}
+.sign-link {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+  padding: 12px 20px;
+  border: 1px solid var(--prety-color);
+  border-radius: 25px;
+}
+.sign-link:hover {
+  background-color: var(--prety-color);
+  color: var(--while-color);
+}
+/*hero*/
+.hero {
+  background-color: var(--black-color);
+  color: var(--while-color);
+}
+.hero .container {
+  padding-left: 215px;
+  padding-bottom: 40px;
+  padding-top: 272px;
+}
+.media-list {
+  display: none;
+}
+
+.hero .pre-title {
+  color: var(--grey-op);
+}
+
+.pre-title {
+  font-weight: 600px;
+  font-size: 11px;
+  line-height: 1.364;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+.hero .title {
+  font-size: 72px;
+  line-height: 1.181;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.title {
+  font-family: var(--accent-font);
+  font-size: 42px;
+  line-height: 1.167;
+  font-weight: bold;
+  letter-spacing: 0.05em;
+}
+.hero .text {
+  color: var(--dark-grey);
+}
+.text {
+  font-size: 18px;
+  line-height: 1.667;
+  letter-spacing: 0.02em;
+}
+.slider-buttons {
+  display: flex;
+  align-self: flex-end;
+}
+.slider-buttons li:not(:last-child) {
+  margin-right: 26px;
+}
+
+.slider-buttons button {
+  color: var(--grey-op);
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid var(--grey-op);
+  width: 60px;
+  text-align: left;
+  padding-bottom: 8px;
+}
+.slider-buttons button:last-child {
+  text-align: right;
+}
+
+.slider-buttons button:hover,
+.slider-buttons button:focus {
+  cursor: pointer;
+  color: var(--while-color);
+  border-bottom: 1px solid var(--while-color);
+}
+
+.media-list li:hover .media-list li:focus {
+  color: inherit;
+}
+
+/*HEADER STYLES*/
+.header {
+  background: var(--black-color);
+  color: var(--while-color);
+}
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/*вдруг я захочу чтобы они стали в столбик
+  flex-direction: column;
+  сдесь разрешили перенос детей на следующую строку 
+  если они не поместились
+  flex-direction: row;
+  flex-wrap: wrap;*/
+/*альтернатива 
+   flex-flow: row wrap;*/
+
+.nav-list {
+  display: flex;
+  width: 387px;
+  justify-content: space-between;
+  margin-left: 40px;
+}
+.media-list li:not(:last-child) {
+  margin-right: 40px;
+}
+.media-list {
+  display: flex;
+  align-items: center;
+}
+/*about section*/
+
+.about .discription {
+  font-size: 14px;
+  letter-spacing: 0.02em;
+  color: var(--dark-grey);
+  margin-top: 20px;
+  margin-bottom: 40px;
+}
+
+.about .container {
+  padding-top: 137px;
+  padding-bottom: 119px;
+  display: flex;
+  justify-content: space-between;
+}
+.about-images-list {
+  display: flex;
+  margin-right: 64px;
+}
+.about-images-list li:not(:last-child) {
+  margin-right: 30px;
+}
+.about-images-list {
+  width: 254px;
+}
+
+.about .title {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+/*feature-section*/
+.feature-section .container {
+  margin-top: 121px;
+  margin-bottom: 130px;
+}
+.feature-section .title {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.feature-section .pretitle {
+  font-weight: 600;
+  font-size: 11px;
+}
+/*masters*/
+.masters .container {
+  padding-top: 130px;
+  padding-bottom: 60px;
+}
+.masters .title {
+  margin-top: 20px;
+  margin-bottom: 44px;
+}
+.masters-list-item {
+  border: 1px solid;
+  width: 370px;
+  text-align: center;
+}
+.masters-list-item h3 {
+  margin-top: 30px;
+  margin-bottom: 8px;
+}
+.icons-list {
+  width: 180px;
+  margin: 0 auto;
+}
+/*price-section*/
+.price-section .container {
+  padding-top: 130px;
+  padding-bottom: 130px;
+}
+.price-section .title {
+  margin-top: 20px;
+  margin-bottom: 44px;
+}
+.price-section .sign-link {
+  margin-top: 50px;
+}
+.price-section {
+  background: var(--black-color);
+  color: var(--while-color);
+}
+
+.contact-section {
+  background: var(--black-color);
+  color: var(--while-color);
+}
+.contact-section .sign-link {
+  background-color: var(--black-color);
+  color: inherit;
+  padding: 12px, 38px;
+  cursor: pointer;
+}
+.contact-section .sign-link:hover,
+.contact-section .sign-link:focus {
+  background-color: var(--prety-color);
+}
+
+/*эффект наведения курсора мыши
+.navList a:hover {
+    color:var(--prety-color);
+}*/
+/*эффект фокусировки мыши
+.navList a:focus {
+    color: green;}*/
+
+/* при наведении увеличвается
+.navList a:active {
+    color: indigo;
+    font-size: 28px;
+}*/
+
+/*а теперь тоже самое, только перечесление селектора*/
+.nav-list a:hover,
+.nav-list a:focus,
+.nav-list a:active,
+.media-list a:focus,
+.media-list a:hover {
+  color: var(--prety-color);
+}
+/*HEADER STYLES*/
